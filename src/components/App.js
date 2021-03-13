@@ -9,6 +9,7 @@ import {Button} from '@material-ui/core';
 import {buttonText} from "./messages/button";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import "./App.css"
+import { Helmet } from "react-helmet"
 
 const App = () => {
   const [lang, setLang] = useState("en")

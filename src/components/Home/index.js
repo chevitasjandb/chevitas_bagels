@@ -4,12 +4,17 @@ import Carousel from '../Carousel';
 import HeroImage from "../Hero-Image";
 import iconDetails from "../images/icons";
 import ChevitasIcon from "../Icon";
+import { Helmet } from "react-helmet"
 
 function Home({lang}) {
   const {doordash, instagram, yelp, facebook, call, grubhub, ubereats} = iconDetails;
 
   return (
     <div className="home">
+      <Helmet>
+        <title>Home</title>
+        <meta name="description" content="Home"/>
+      </Helmet>
       <HeroImage page="home"/>
       <Carousel />
       <div className="social-media-wrapper-home">

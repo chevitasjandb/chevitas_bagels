@@ -2,12 +2,17 @@ import React, {Fragment} from 'react';
 import HeroImage from "../Hero-Image";
 import {contactText} from "../messages/contact";
 import "./page.css";
+import { Helmet } from "react-helmet"
 
 export default function Page({lang}) {
   const pageText = contactText.page[lang];
 
   return (
     <Fragment>
+      <Helmet>
+        <title>Contact</title>
+        <meta name="description" content="Contact" />
+      </Helmet>
       <HeroImage page="contact"/>
       <main className="contact-page">
         <section className="contact-info">

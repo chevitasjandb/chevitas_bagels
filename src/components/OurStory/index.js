@@ -2,11 +2,15 @@ import React, {Fragment} from 'react';
 import "./our-story.css";
 import ourStoryMessages from '../messages/ourStory';
 import HeroImage from "../Hero-Image";
-
+import { Helmet } from "react-helmet"
 
 const OurStory = ({lang}) => {
   return (
     <Fragment>
+      <Helmet>
+        <title>Our Story</title>
+        <meta name="description" content="Our Story" />
+      </Helmet>
       <HeroImage page="ourStory"/>
       <div className="our-story">
         <main>

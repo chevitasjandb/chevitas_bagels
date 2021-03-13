@@ -15,11 +15,16 @@ import bolillo from "../images/bolillo.JPG"
 import banana from "../images/froz-banana.jpg"
 import carousel4 from "../images/carousel4.jpg";
 import carousel6 from "../images/carousel6.jpg";
+import { Helmet } from "react-helmet"
 
 
 export default function Photos() {
 	return (
 		<div className="photo">
+		<Helmet>
+        <title>Photos</title>
+        <meta name="description" content="Potos" />
+      </Helmet>
 			<div className="margin">
 				<img className="image" src={bagelJuice} alt="bagel"></img>
 			</div>

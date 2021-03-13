@@ -6,6 +6,7 @@ import {menuItemsArr} from '../messages/menu';
 import MenuSection from './menuSection';
 import './menu.css';
 import { orderOnlineMessage } from '../messages/homePage';
+import { Helmet } from "react-helmet"
 
 const {doordash, call, grubhub, ubereats} = iconDetails;
 
@@ -16,6 +17,10 @@ const Menu = ({
 
 	return (
 		<Fragment>
+		<Helmet>
+        <title>Menu</title>
+        <meta name="description" content="Menu"/>
+      </Helmet>
 			{x.matches && <HeroImage page="menu"/>}
 			<div className="menu-wrapper">
 				<h1>Menu</h1>
