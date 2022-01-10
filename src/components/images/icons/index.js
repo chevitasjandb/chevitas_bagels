@@ -2,6 +2,7 @@ import instagram from "./instagram-icon.svg";
 import yelp from "./yelp-icon.svg";
 import facebook from "./facebook-icon.svg";
 import call from "./call-icon.svg";
+import ezcater from "./ez-cater-logo.jpg";
 import grubhub from "./grubhub-logo-square.png";
 import doordash from "./doordash-icon.svg";
 import ubereats from "./uber-eats-logo.png";
@@ -12,6 +13,12 @@ const iconDetails = {
     src: grubhub,
     alt: "grubhub icon",
     id: "grubhub"
+  },
+  ezcater: {
+    href: "https://www.ezcater.com/catering/pvt/chevitas-3?fcv=1",
+    src: ezcater,
+    alt: "ezcater icon",
+    id: "ezcater"
   },
   doordash: {
     href: "https://www.doordash.com/store/chevita-s-juice---bagels-santa-ana-783486/en-US",

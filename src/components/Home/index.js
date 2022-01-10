@@ -7,7 +7,7 @@ import ChevitasIcon from "../Icon";
 import {Helmet} from "react-helmet";
 
 function Home({lang}) {
-  const {doordash, instagram, yelp, facebook, call, grubhub, ubereats} = iconDetails;
+  const {doordash, instagram, yelp, facebook, call, ezcater, grubhub, ubereats} = iconDetails;
 
   return (
     <div className="home">
@@ -23,7 +23,8 @@ function Home({lang}) {
           <ChevitasIcon icon={facebook} />
           <ChevitasIcon icon={yelp} />
           <ChevitasIcon icon={call} />
-          <ChevitasIcon icon={doordash}/>
+          <ChevitasIcon icon={ezcater} />
+          <ChevitasIcon icon={doordash} />
           <ChevitasIcon icon={grubhub} />
           <ChevitasIcon icon={ubereats} />
         </div>
